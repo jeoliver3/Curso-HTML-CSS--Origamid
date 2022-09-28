@@ -1,0 +1,95 @@
+a{
+    display:inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background: #caf;
+    color:#217;
+    
+}
+
+
+a:hover{
+    background: #adf;
+    color:#147;
+    
+
+    /* o hover é quando passa o mouse por cima, é possivel estilizar*/
+    
+}
+
+.focus,a:focus{
+
+    background:#cfa ;
+    color:red;
+ 
+    /* estado de focus é o estado que navega por possiveis
+    elementos que podem ser focado como botoes, links, formularios, para navegaçao 
+    em tab no site*/
+}
+
+a:active{
+    background: #ffa;
+    /* active muda a cor ao clicar no link*/
+}
+
+.lista-1 li:first-child {
+    background: green;
+    /* estou falando com lista-1 e com li, defini como first-child que seleciona
+    o primeiro elemento. dei backgroud de verde pra ele*/
+}
+
+.lista-1 li{
+    background: #ffa;
+    /* ele pintou toda lista de amarelo menos o primeiro pq estava definido
+    como first-child já*/
+}
+
+.lista-2 li:last-child{
+
+    background: orangered;
+    /* last-child pinta o último elemento*/
+}
+
+.lista-3 li:nth-child(3){
+    background: red;
+    /* nht é uma funcao, por isso o parentese e recebe alguns argumentos nessa funcao, como
+    selecionar o numero desejado, no exemplo o terceiro*/
+}
+
+.lista-4 li:nth-child(even){
+
+    background: royalblue;
+    /* outra funcao de nht é o even, que seleciona todos os numeros pares*/
+}
+.lista-5 li:nth-child(odd){
+    background: palevioletred;
+
+    /* com odd ele seleciona todos os ímpares*/
+}
+
+.lista-6 li:nth-child(3n){
+    background: #ffa;
+    /* 3n seria selecione todo terceiro elemento, ele seleciona de 3 em 3 (3, 6, 9 ..)
+     poderia ser tb 4n, selecione
+    todo quarto elemento,de 4 em 4 (4, 8, 12) ... */
+}
+
+.lista-7 li:not(:first-child, :last-child){
+    background: gray;
+    /* seletor de negaçao. ele seleciona os elementos que nao querem
+ser pintados, como no exemplo o primeiro e o ultimo*/
+}
+
+.lista-8 li:not(:last-child, :first-child,.terceiro){
+background: purple;
+/* ele pintou todos menos os que foram negados, que foram no caso, 
+primeiro, ultimo e o terceiro*/
+    
+}
+
+h2:not(.contato){
+    text-decoration: underline;
+    /* coloquei um text-decoration em todo h2, mas não quero selecionar o elemento contato
+    pra isso add o not + a class que no caso foi "contato"*/
+}

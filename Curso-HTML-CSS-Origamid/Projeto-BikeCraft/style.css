@@ -1,0 +1,144 @@
+.grid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    max-width: 1000px;
+    /* definir o tamanho maximo dessa div que segura o site todo, significa
+    definir que ele vai extender no maximo 1000 px, q foi o valor que defini para 
+    que o conteudo todo dele se extenda*/
+
+ /* place-content center é um atalho de justify-content e aling-content center*/
+}
+
+
+
+.menuzinho {
+    display: flex;
+    flex-wrap: wrap;
+    /* flez wrap para ficar responsivo na hora de quebrar a pagina*/
+    gap: 20px;
+    justify-content: center;
+    /*justify center para ficar todos itens ao centro quando fizer a quebra responsiva*/
+}
+
+a{
+background: white;
+padding: 15px 30px;
+border-radius: 4px solid #e7e7e7;
+text-decoration: none;
+color: black;
+text-transform: uppercase;
+/* uppercase significa colocar todo conteudo em letra maiuscula*/
+
+
+
+}
+body {
+
+    font-family: arial;
+    display: grid;
+    background-color: #f7f7f7;
+    gap:20px;
+    margin: 30px;
+    justify-items: center;
+
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+}
+
+
+.fotobici{
+    max-width: 100%;
+    grid-column: 2;
+    display: block;
+ 
+
+}
+span{
+    font-size: 20px;   
+
+    
+}
+
+.descricao{
+    padding: 40px;
+    background: white;
+    border: 1px solid #e7e7e7;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    justify-items: end;
+
+}
+.coracao{
+    max-width: 30px;
+   
+
+}
+
+.botao{
+
+    text-decoration: none;
+    padding: 15px 30px;
+    background: yellow;
+    color:black;
+    font-size: 20px;
+    
+}
+.especificacao{
+    
+    background: white;
+    padding: 40px;
+
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.3;
+    /* line height e para dar um espacamento entre as letras, aumenta a altura
+    da linha*/
+}
+
+
+.vantagens{
+
+    margin-top: 10px;
+    padding: 40px;
+    text-align: right;
+    font-size: 64px;
+    color:rgba(0,0,0, 0.2);
+    font-family: 'Courier New';
+    align-self: center;
+    /*alin-self, estou falando com o item dentro do grid*/
+        
+}
+
+
+.especificacao.item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    padding: 20px;
+    gap: 10px 20px;
+    /* 10px foi gap de linha e 20px foi gap de coluna entre os itens*/
+}
+.rodape{
+
+    background: yellow;
+    width: 100%;
+    /*definir width de 100% quer dizer que esse backgrund vai ter no 
+    maximo 100% sem estourar, assim como em foto*/
+    text-align:center;
+    padding: 40px;
+    box-sizing: border-box;
+    /*box-sizing border box e definido para nao estourar no limite que
+    foi definido, no caso width 100%, ele respeita o limite*/
+}

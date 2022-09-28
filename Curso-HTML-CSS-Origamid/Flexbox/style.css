@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+    /* display flex fica um ao lado do outro, diferente do
+    grid que forma colunas*/
+    flex-wrap: wrap;
+    /* ele mantem a quebra de linha*/
+    gap: 20px;
+    /* o gap criou um espacamento de 20px entre os elementos*/
+    padding: 20px;
+   
+
+
+}
+
+body{
+    margin: 0px;
+}
+h2{
+    background: #fff;
+    padding: 10px;
+    margin: 0px;
+    flex: 1;
+    border: 1px solid black;
+
+}
+.grid{
+background-color: yellow;
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(150px, auto));
+gap: 20px;
+padding: 20px;
+
+/* auto-fit so funciona com um valor e o valor dado para ele repetir quantos espacos
+tiver seria minmax e o valor para minmax foi definido como 150px e auto*/
+}
+

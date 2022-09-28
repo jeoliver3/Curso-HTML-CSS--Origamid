@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+}
+body{
+    font-family: 'Lucida Sans';
+}
+h2{
+    margin-top: 0px;
+    /*margin top serve para aproximar o h2 do topo porque o padding e margin
+    desgrudaram mas deixou muito distante*/
+}
+
+.item{
+    background: plum;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.comprar{
+    background: white;
+    
+    color:black;
+    padding: 10px 20px;
+    /*dando o padding no botao comprar, ele desgrudou e o valor 10 px seria do topo para
+    baixo e 20 px de um lado para outro - direita esquerda*/
+    /*isso tudo da a caracteristica de botao*/
+    text-decoration: none;
+    /*para tirar o sublinhado*/
+    border-radius: 4px;
+    /*border radius para arredondar o botao*/
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    /* colocabdo 1fr ele distribui de forma igual os blocos e colunas, como
+    se fosse 50% 50%*/
+    /*se eu quiser que a segunda columa seja maior que a primeira
+    eu coloco 1fr 2fr */
+    gap:20px;
+    /*se quiser ajustar todo bloco ao centro, colocar 300px 300px em grid template, tirando o fr1 fr1 e add 
+    o elemento justify content: center, ou ao fim - end*/
+    /*mas se nao quiser ajustar o bloco, manter o fr1 fr1 no grid template colums, pois assim ele deixa uniforme
+    mas nao se pode ajustar*/
+    justify-content: center;
+
+}

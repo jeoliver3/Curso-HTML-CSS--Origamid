@@ -1,0 +1,65 @@
+.introducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+.introducao h1{
+    font-size: 3rem;
+    line-height: 1.125;
+    /* esse valor da line-heigth é 1.125 vezes o valor da font-size, 
+    ou seja: é 1.125 vezes 48, que seria 54. poderia colocar 54px tambem, mas 
+    é melhor colcar o valor relativo ao font size*/
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introducao h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(./img/detalhe.svg) no-repeat center;
+    position: absolute;
+    left: -40px;
+    z-index: -1;
+}
+.introducao p{
+    font-size: 1.5rem;
+    color: #525252;
+    
+
+}
+@media (max-width:1000px){
+    .introducao h1{
+        font-size: 2rem;
+        
+        
+    }
+    .introducao p{
+        font-size: 1rem;
+    }
+    .introducao{
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 20px;
+        
+
+    }
+    .introducao img{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    h1,p{
+    text-align: center;
+}
+
+.introducao h1::before{
+  width: 20px;
+  height: 30px;
+  left: 120px;
+}
+}

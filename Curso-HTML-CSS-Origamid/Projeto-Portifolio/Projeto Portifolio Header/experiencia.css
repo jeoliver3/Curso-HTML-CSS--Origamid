@@ -1,0 +1,161 @@
+.experiencia{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+.amarelo{
+    color: red;
+    background: yellow;
+}
+
+.subtitulo{
+    font-size: 9rem;
+    text-transform: uppercase;
+    word-break:break-all;
+    line-height: 1;
+    max-width: 4ch;
+    color: #e0e0e0;
+
+    /*4 caracteres significa que o subtitulo quando espacar o site,
+    vai caber em 4 caracteres*/
+}
+.experiencia-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    /* quer dizer que ele para de crescer quando ultrapassar 40 caracteres*/
+    margin-bottom: 60px;
+   padding: 10px 10px;
+    
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+    /* gap de 10px na horizontal e 20px na vertical*/
+    
+}
+.empresa-ano{
+    position: absolute;
+    top: 25px;
+    left: -40px;
+    font-size: 0.65rem;
+}
+.empresa::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: greenyellow;
+    position: absolute;
+    top: 20px;
+    left: -5px;
+
+}
+.empresa-titulo, .empresa-texto, .cargo{
+    font-size: 16px;
+    
+}
+
+.cargo, .empresa-titulo{
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.empresa-habilidades{
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+    
+}
+.empresa-texto{
+    line-height: 1.4;
+    color: #525252;
+    font-size: 15px;
+}
+.empresa-habilidades li{
+    font-size: 12px;
+    line-height: 1.4;
+    color: #525252;
+    background-color: #ffff;
+    padding: 5px 10px;
+
+}
+
+@media(max-width:800px){
+    .experiencia{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    
+    }
+    .empresa{
+        display: grid;
+        grid-column: 1fr;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .experiencia-texto{
+        font-size: 16px;
+        margin: 20px auto;
+    }
+    .subtitulo{
+        font-size: 2rem;
+        text-align:center;
+        color: black;
+        text-transform: capitalize;
+        /* text transform capitalize aumenta só a primeira letra*/
+        max-width: initial;
+        /* o tamanho da fonte volta para como era inicialmente, 
+        titando o ch definido*/
+        margin-top: -30px;
+        
+    }
+    .empresa-titulo, .empresa-texto, .cargo{
+        font-size: 12px;
+        align-content: start;
+    
+    }
+    .empresa-texto, .cargo{
+        text-align: start;
+    }
+    .empresa-habilidades li{
+        padding: 4px 8px;
+        font-size: 8px;
+    }
+   .empresa{
+       width: 300px;
+       height: 150px;
+       
+}
+.empresa-ano{
+    position: initial;
+    /* ele sai de position absolute e volta para o fluxo inicial*/
+    order: 1;
+    /* ordenei o elemento para 1, então ele vai ficar abaixo de todos 
+    os elementos. se fosse order 0, ele ficaria la em cima em primeiro de todos
+    os elementos.*/
+    text-align: left;
+    background: #fff;
+    width: 40px;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 10px;
+
+}
+.empresa-ano::before{
+    content: "Ano:";
+}
+
+}

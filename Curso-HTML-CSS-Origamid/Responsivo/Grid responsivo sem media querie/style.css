@@ -1,0 +1,43 @@
+img{
+    max-width: 100%;
+    display: block;
+}
+
+p{
+    font-size: 2rem;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* com auto-fit ele cria quantas colunas forem possiveis, respeitando
+    o valor que eu dei, no caso de 300px. Entao ele vai criar quantas colunas
+    derem de 300px*/
+    /* com minmax, que é uma funcao, eu estou falando que no mínimo a div tenha
+    300px mas se der para crescer mais eu coloco 1fr
+    que quando chegar em 300px ele fique em apenas 1 coluna, ficando assim responsivo*/
+    /* com minmax eu tenho um valor minimo e outro maximo, que no caso é 300px e 1fr*/
+    /* esse tipo de codigo é um modelo que substitui o media query*/
+}
+
+.galeria{
+    
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+    margin-top: 10px;
+    gap:20px
+    /* com o auto-fit minmax, ele vai colocando 150px de imagem 
+     cria-se facilmente uma galeria com esse tipo de layout*/
+}
+    
+@media(min-width: 400px){
+     .minmax img{
+        grid-row: 2;
+
+        /* quando chegar nesse momento responsivo em que quebra em duas
+colunas, eu quero que paragrafo fiquei acima de imagem por exemplo, eu vou reordenar
+esse conteudo add o media query, falando com a classe e img, dizendo para img ir
+para linha 2 */
+
+    }
+}
+
+

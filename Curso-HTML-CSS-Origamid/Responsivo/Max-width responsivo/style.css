@@ -1,0 +1,39 @@
+img{
+    max-width: 100%;
+    display: block;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 960px;
+    /* essa div grid segura todo site quero controlar a largura dele
+    , determinando 960px de max-width, isso
+    quer dizer que ele nao vai crescer mais q 960px de largura. */
+
+    margin: 100px auto;
+
+    /* 100px para cima e para baixo e automatico para esquerda e direita
+    Esse codigo com margens  alinha o conteudo ao centro quando determinamos que
+    max-width foi de tal valor*/
+
+}
+
+p{
+    max-width:60ch;
+
+    /*Ch é uma unidade de valor, relacionada a largura do character.
+Se eu der 60ch, seria como se fosse 60 zeros seguidos.
+E em termos de design tem um tamanho  ideal de largura de texto de corpo que sao entre 60-50 caracteres, entao 60ch seria um bom tamanho para se ter em 
+Um texto.
+*/
+font-size: 2rem;
+margin-left: 10px;
+}
+
+.texto{
+    align-self: center;
+    /* agora esse elemento esta alinhado ao centro imagem */
+}

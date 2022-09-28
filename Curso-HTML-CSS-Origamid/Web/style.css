@@ -1,0 +1,10 @@
+#introducao {
+  color: pink;
+}
+.black,
+.big,
+.underline {
+  color: black;
+  text-decoration: underline;
+  font-size: 40px;
+}

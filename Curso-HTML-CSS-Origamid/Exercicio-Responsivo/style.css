@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background: #f7f7f7;
+    display: grid;
+    gap: 3.75rem;
+    justify-items: center;
+    margin-top: 3.75rem;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  li {
+    margin: 0px;
+  }
+  
+  li  p{
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+  
+  
+  nav a {
+    background: #ffffff;
+    color:black;
+    text-transform:uppercase;
+    padding: 0.90rem 1.88rem;
+    margin: 0.62rem;
+    border-radius: 0.25rem;
+  
+  }
+  
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 62.5rem;
+    
+  }
+
+  
+  main {
+    background: #fff;
+    padding: 2.5rem;
+    text-align: right;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    justify-items: end;
+    
+  }
+  
+  main::before {
+    content: "";
+    background: red;
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    top: 40px;
+    right: -20px;
+
+  }
+  
+  .subtitulo {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+    background-image:url(./onda.svg);
+  }
+  
+  
+  .botao {
+    background: #e21;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin: 4px;}
+
+    .vantagens {
+        background: #fff;
+        padding: 40px;
+      }
+      
+ 
+   
+  .vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 5px;
+    align-items: center;
+    
+  }
+  
+  .vantagens-item li {
+    grid-column: 2;
+  }
+  
+  .rodape {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  li{
+    padding: 4px;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  .menu{
+    
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:20px;
+      
+  }
+  
+  .subtitulo{
+      background-image: url(./onda.svg);
+  }
+  .botao:hover{
+      background: #900;
+  }
+  
+.hover:hover{
+    border-color: red;
+}
+.hover{
+  border: 2px solid white;
+  /* aqui eu defini uma borda branca para hover só para parar de pular
+  os itens assim que é definido como hover. depois logo acima defini uma 
+  cor vermelha para borda qdo passa o mouse, apenas pintei de red, pois
+  já tinha definido uma borda branca*/
+}
+
+.vantagens-item:hover{
+
+  border-left: 4px solid red;  
+}
+.vantagens-item:nth-child(odd){
+  background-color: rgba(0,0,0,0.03);
+  margin:20px auto;
+  padding: 10px 5px;
+ 
+ 
+}
+
+
+
+@media (max-width: 600px) {
+    .conteudo{
+        grid-template-columns: 1fr;
+      
+    }
+    main::before{
+        content: none;
+    }
+    .subtitulo{
+        font-size: 2rem;
+        text-align: center;
+        
+         
+        
+    }
+    nav a {
+        display: flex;
+        padding: 8px 18px;
+        
+        
+    }
+   h1{
+       font-size: 1.5rem;
+   }
+  
+  .hover{
+      font-size: 16px;
+  }
+  .botao{
+      padding: 10px 20px;
+      font-size: 12px;
+  }
+  li{
+      margin: 5px;
+      position: relative;
+    
+  }
+
+main{
+  justify-items: center;
+  text-align: center;
+  gap: 1px;
+}
+
+body{
+  gap: 10px;
+  margin-top: 20px;
+}
+}

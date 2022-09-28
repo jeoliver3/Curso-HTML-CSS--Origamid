@@ -1,0 +1,56 @@
+a{
+    text-decoration: none;
+    color:white;
+    background: darkblue;
+    display: inline-block;
+}
+p{
+    background: aqua;
+}
+.px{
+    padding: 16px 32px;
+    font-size: 24px;
+}
+.rem{
+    padding: 1rem;
+    /* 1rem vale 16 px , 2rem vale 32px, 1.5 rem vale 24px porque é 1.5x 16px*/
+    font-size: 2rem;
+}
+
+div{
+    background: lightskyblue;
+    height: 100vh;
+    /* 100vh significa que ele vai crescer 100% da tela - viewport height
+    usar vw e vh para nao usar porcentagem*/
+    width: calc(100vw - 100px);
+    /* usar vw viewport width com calculo, ele faz soma ou diminui unidades.
+    nesse caso ele tirou 100px de 100% da altura
+    calc é uma funcao dentro de css
+    poderia dividir 100vw /3 que ele dividiria a tela em 1/3*/
+    margin-top:20px;
+}
+h3{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* depois das virgulas estao as fontes que ele vai tentando carregar no site
+    caso nao tenha a primeira definida*/
+    font-weight: bold;
+    /* é o peso da fonte, pode ser bold ou normal*/
+    font-style: italic;
+/* estilo da tipografia, que comeca com normal ou obliquo ou italico */
+    line-height: 1.3;
+/* altura da linha, trabalha em relacao a tipografia que se tem. para corpo de texto se usa 1.3 ou 1.2*/
+    text-decoration:none;
+    text-transform:lowercase ;
+    /* transforma o texto. captallize transforma todas as letras em maiuscula
+    , uppercase tudo em maiusculo, lowcase tudo em minuscula*/
+    text-indent:5rem ;
+    /*serve para identar a primeira linha, serve para quando se tem mais de um parag
+    rafo e vc quer dar uma pista d eonde comeca o paragrafo*/
+    text-shadow: 5px 5px 0px gray ;
+    /* quase nunca utilizado, cria sombra no texto. os valores em pixels
+    sao de a sombra andando para o lado, o segundo valor, andando de cima para baixo*/
+    letter-spacing: 5px ;
+    /* cria um espaço entre as letra, pode colocar em px ou em rem (0.5rem) por exemplo*/
+
+}

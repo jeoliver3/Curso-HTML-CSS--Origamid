@@ -1,0 +1,51 @@
+h1 {
+  background: #8844ee;
+
+  color: #b17147;
+  padding: 20px;
+  border: 4px solid #111;
+  margin: 30px;
+}
+
+/* rgb e usado como funcao ()*/
+
+/*color: rgb (0,0,0) vai ser = a black*/
+
+div {
+  background: #aaa;
+  width: 140px;
+  height: 80px;
+  padding: 20px;
+  border: 4px solid #111;
+  margin: 30px;
+}
+
+body {
+  margin: 0px;
+}
+
+h1,
+h2,
+p {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+body {
+  color: red;
+}
+
+a {
+  color: inherit;
+  padding: 30px;
+}
+.nice {
+  background: yellow;
+  color: blue;
+  
+}
+ span{
+   color: red;
+   
+ }

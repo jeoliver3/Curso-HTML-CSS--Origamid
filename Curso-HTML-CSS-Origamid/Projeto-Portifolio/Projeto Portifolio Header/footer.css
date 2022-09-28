@@ -1,0 +1,66 @@
+.footer{
+    background: black;
+    
+}
+
+.footer-container{
+    max-width: 1200px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+.footer-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color:#ccc;
+}
+
+.footer-contato li{
+    font-size:1.75rem;
+    color:#fff;
+    line-height: 1.1;
+    font-weight: bold;
+    padding: 20px;
+}
+.footer-contato a{
+    color:#fff;
+   
+}
+.copy{
+    font-size: 1.25rem;
+    color:#8f8f8f;
+    grid-column: 1/-1;
+    /* eu quero que copy se expanda e não fique quebrado
+    então eu digo que vá da primeira coluna até a ultima
+    que tiver, no caso -1*/
+}
+
+@media (max-width:800px){
+    
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        
+        
+    }
+    .footer-contato{
+        justify-self: center;
+    }
+
+.footer-texto{
+    font-size: 1rem;
+    padding: 20px 20px;
+margin-top: -100px;
+max-width: 30ch;
+justify-self: center;
+text-align: start;
+}
+
+.footer-contato li{
+    font-size: 1.25rem;
+}
+}

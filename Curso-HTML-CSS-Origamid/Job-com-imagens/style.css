@@ -1,0 +1,25 @@
+img{
+    max-width: 100%;
+    display: block;
+}
+/* display block e para que nao haja separacao por padrao entre uma img e outra*/
+/* display block agrupa as imagens da div*/
+
+
+div{
+    
+    width: 200px;
+    margin: 10px;
+    
+}
+
+.carro {
+width: 150px;
+height: 100px;
+padding: 100px;
+
+}
+
+.lollisvg{
+    background: plum;
+}

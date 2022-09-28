@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+input{
+    font-size: 1.2rem;
+    /* input nao herda font-size do body, então sempre é inmportante definir ele com mais que isso
+para que ele sempre fique maior que o texto, que tem por padrao
+1 rem*/
+padding: 10px;
+border: 2px solid black;
+border-radius: 2px;
+background: #efefef;
+}
+
+button{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    padding:10px;
+    background: #caf;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* cursor pointer define para o usuário que o link é clicavel com
+    a maozinha*/
+}
+
+.checkbox label, .radio label{
+    margin:0px;
+    display: inline-block;
+    
+}
+ .checkbox input, .radio input{
+     margin: 0px;
+     width:20px;
+     height: 20px;
+ }
+ .checkbox, .radio{
+     display: grid;
+     grid-template-columns: auto 1fr;
+     /* auto fica o tamanho que for o input e 1fr para crescer infinito*/
+     align-items: center;
+     gap: 10px;
+     margin-top: 20px;
+ }
+ select{
+     font-size: 1.25rem;
+     padding: 10px;
+ }
+ textarea{
+     font-size: 1.25rem;
+     font-family: Arial, Helvetica, sans-serif;
+ }

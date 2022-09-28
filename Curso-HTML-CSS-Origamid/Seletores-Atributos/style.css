@@ -1,0 +1,90 @@
+[required]{
+    border: 2px solid red;
+    /* colocar colchetes e dar atributo
+    posso tb colocar o valor do atributo*/
+}
+
+[href="#contato"]{
+
+/* seleciono o elemento, coloco dentro do colchete e dou o atributo (border)para ele*/
+
+border: 2px solid green;
+
+}
+div{
+    margin-top: 20px;
+}
+
+[href ^="#"] {
+    background: #caf;
+    /*seletor que seleciona links internos, que tiver somente no inicio, no caso aqui a rash*/
+}
+[href$=".com"]{
+    background: yellow;
+    /* seletor ($)somente os links que terminam , como no caso de .com*/
+}
+
+section > h2{
+color: tomato;
+/* colocando o seletor de > estou definindo que apenas o h2 de
+section sera pintado*/
+}
+
+article{
+    background: lightgreen;
+    padding: 10px;
+}
+
+p{
+    margin:0px;
+}
+
+p+p {
+margin-top: 20px;
+/*aqui o sinal de mais + diz que após o segundo p ele dá margem top de 20px
+mas apenas depois do segundo p o primeiro ele nao seleciona, entao ele deu 
+margin top para o segundo e para o terceiro p*/
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* asterisco é um seletor que seleciona todo site, nesse caso dei uma font
+    family para o site todo*/
+}
+
+html body section h2{
+    border-left: 6px solid lightcoral;
+}
+
+:root{
+   --cor-primaria: purple;
+   --border: 4px solid red;
+   --fonte-grande: 3rem;
+}
+/* root é um seletor muito usado, funciona como usar html para cus
+tomizar. Usando a variavel, vc pode customizar e otimizar todos os estilos*/
+
+h1{
+   
+    color: var(--cor-primaria);
+    border:var(--border);
+    font-size: var(--fonte-grande);
+
+}
+
+p{
+    color:var(--cor-primaria);
+    
+}
+
+span{
+    font-size: var(--fonte-grande);
+}
+
+h4{
+    font-size: calc(var(--fonte-grande)/2);
+    /* para utilizar calculo, pegue calc envolve na
+    variavel e divide por 2 por exmplo. ficou 3 rem (48px) de fonte grande
+    dividido por 2*/
+
+}

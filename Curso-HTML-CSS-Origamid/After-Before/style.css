@@ -1,0 +1,51 @@
+h1::before{
+    content: "teste";
+    /* cria um psedudo elemento antes (before) do h1, usa-se 2 pontos mesmo,
+tem que colocar o content, pois seria o conteudo desse elemento*/
+}
+h1::after{
+    content: "teste";
+    /* vamos usar geralmente esses elementos - after e before - para decoracao
+    evita ficar criando elemento html para estilizar*/
+}
+
+h3::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background: green;
+}
+.lista{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.lista::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    /* essas medidas de largura e altura, cria um quadradinho*/
+    background: linear-gradient(#caf, #fff);
+    margin-right: 10px;
+    /* deu uma distancia de 10px a direita dos elementos*/
+    border: 2px solid #caf;
+    border-radius: 5px;
+    /* border-radius arredondou para uma bolinha, dando 5px*/
+
+}
+
+ol{
+    list-style: none;
+    /* com esse comando list-style : none, tirei o estilo da lista
+    que ol dá. que seria numerado*/
+}
+
+
+
+
+
+
+
+

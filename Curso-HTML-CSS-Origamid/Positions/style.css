@@ -1,0 +1,47 @@
+h1 {
+
+border: 2px solid #ccc;
+padding: 20px 20px 60px 10px;
+}
+
+
+p{
+
+    background: #e7e7e7;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+}
+.fixo{
+position: fixed;
+/* toda vez que quiser definir um position fixed, tem que definir tb onde ele deve ficar posicionado
+ left, right, bottom, top*/
+ /*esses elementos so irao funcionar onde tiverem o position modificado*/ 
+right:20px;
+left: 20px;
+bottom: 20px;
+
+}
+
+.posrelative{
+
+border: 2px solid #ccc;
+margin-top: 40px;
+padding: 20px 10px 40px 10px;
+position: relative;
+}
+
+.noborder{
+
+    border:none;
+
+}
+span{
+    background: #e7e7e7;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: arial;
+}
+

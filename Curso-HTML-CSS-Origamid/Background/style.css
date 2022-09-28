@@ -1,0 +1,47 @@
+.bicicleta{
+
+    height:600px;
+    background-image: url("./bicicleta.jpg");
+    /* para add imagem e estilizar no css*/
+    background-color: lightcoral;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* ele posiciona a imagem ao centro e mantem uma pequena margem ao topo sem cortar*/
+    display: flex;
+}
+
+h1 {
+margin:auto ;
+    /* quando margin esta definido como auto, ele alinha a imagem  ao centro porque a div esta
+    como dslplay flex*/
+    background-color: white;
+    padding: 1rem 2rem;
+
+}
+
+.pattern{
+
+    height:300px;
+    background-image: url("./pattern.svg");
+    background-color: lightgreen;
+    background-repeat: repeat;
+    background-size: 200px;
+
+}
+
+.gradientelinear {
+    height: 200px;
+    background-image: linear-gradient( 45deg, lightblue, lightcoral, blue);
+    /* 45deg significa 45 graus - degree, ele rotaciona 45 graus toda cor*/
+    /* é possivel add porcentagem ao lado de cada cor para dar maior valor a cada cor, 
+    como por exemplo deixar to left, todas a esquerda ao inves de 45 deg e 5% lightblue 
+    10% lightcoral, 5% blue*/
+}
+
+.gradienteradial{
+    height: 200px;
+    background-image: radial-gradient(circle, blue, yellow, green);
+    /* aqui gradiente radial criou um circulo e as cores definidas*/
+
+}

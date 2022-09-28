@@ -1,0 +1,42 @@
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px;
+    justify-content: center;
+    /* todo conteudo foi justificado ao centro, ,mesmo quando
+    responsivo*/
+}
+.header-menu a{
+    text-decoration: none;
+    color: #141414;
+    font-size: 1.125rem;
+    padding: 15px 30px;
+    display: block;
+  
+    
+}
+@media(max-width: 800px){
+    .header-menu a{
+        background-color: lightgray;
+        
+        border-radius: 4px;
+    }
+    .header{
+        flex-direction: column;
+        
+        /* flex-direction faz com que os elementos fiquem em
+        coluna qndo responsivos*/
+        gap: 40px;
+        padding: 10px;
+        
+    }
+}
